@@ -1,0 +1,20 @@
+{
+  "name": "elm-17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reactor": "elm-reactor -a 0.0.0.0 -p 7072",
+    "refresh": "browser-sync start --proxy localhost:7072 --files '*.elm,*.css'",
+    "start": "npm-run-all -P reactor refresh"
+  },
+  "author": "Murphy Randle",
+  "license": "ISC",
+  "dependencies": {
+    "elm": "0.17.0-alpha2"
+  },
+  "devDependencies": {
+    "browser-sync": "2.12.5",
+    "npm-run-all": "1.8.0"
+  }
+}
